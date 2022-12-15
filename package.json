@@ -9,5 +9,12 @@
   "devDependencies": {
     "@nuxt/content": "^2.2.2",
     "nuxt": "^3.0.0"
+  },
+  "dependencies": {
+    "@iconify-json/carbon": "^1.1.11",
+    "@nuxt-themes/typography": "^0.1.4",
+    "@unocss/nuxt": "^0.47.6",
+    "@unocss/preset-rem-to-px": "^0.47.6",
+    "@unocss/reset": "^0.47.6"
   }
 }

@@ -1,5 +1,7 @@
 <template>
-  <article>
-    <ContentDoc />
-  </article>
+  <div>
+    <article max-w-1024 mxauto>
+      <ContentDoc />
+    </article>
+  </div>
 </template>
