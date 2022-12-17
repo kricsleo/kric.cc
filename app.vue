@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import '@unocss/reset/tailwind.css'
 import 'uno.css'
+import './prose-light.css'
 </script>
 
 <template>
-  <div>
+  <Header />
+  <div class="prose">
     <NuxtPage />
   </div>
 </template>

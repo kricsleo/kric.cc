@@ -1,5 +1,12 @@
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-  extends: '@nuxt-themes/typography',
-  modules: ['@nuxt/content', '@unocss/nuxt']
+  modules: ['@nuxt/content', '@unocss/nuxt'],
+  content: {
+    highlight: {
+      theme: {
+        default: 'github-dark',
+        dark: 'github-dark'
+      }
+    }
+  }
 })
