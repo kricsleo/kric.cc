@@ -5,13 +5,16 @@ import './prose-light.css'
 </script>
 
 <template>
-  <Header />
-  <div class="prose">
-    <NuxtPage />
+  <div max-w-900 mx-auto px-40 text-dark-9 dark:text-light-9>
+    <Header />
+    <div>
+      <NuxtPage />
+    </div>
   </div>
 </template>
 
 <style>
+
 ::-webkit-scrollbar {
   width: 1.1rem;
   height: 1.1rem;
@@ -31,12 +34,18 @@ import './prose-light.css'
 
 ::-webkit-scrollbar-thumb {
   border-radius: 999rem;
-  background-color: #d1d5db;
+  background-color: #ddd;
   border: 5px solid transparent;
   background-clip: content-box;
 }
+::-webkit-scrollbar-thumb:hover {
+  background-color: #bbb;
+}
 .dark *::-webkit-scrollbar-thumb {
-  background-color: #475569;
+  background-color: #44403c;
+}
+.dark *::-webkit-scrollbar-thumb:hover {
+  background-color: #78716c;
 }
 * {
   border-color: rgba(229, 231, 235, 1)

@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <article max-w-1024 mxauto>
-      <ContentDoc />
-    </article>
-  </div>
+  <article class="prose" py-40>
+    <ContentDoc />
+  </article>
 </template>

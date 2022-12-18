@@ -1,18 +1,5 @@
 <template>
   <main>
-    <div max-w-1024 mxauto>
-      <ContentList>
-        <template #default="value">
-          <ul>
-            <li v-for="article in value.list" :key="article._path">
-              <NuxtLink :to="article._path"> {{article.title}} </NuxtLink>
-            </li>
-          </ul>
-        </template>
-        <template #not-found>
-          Not found.
-        </template>
-      </ContentList>
-    </div>
+    <h1 text-30 text-center>Welcome to kricsleo' page.</h1>
   </main>
 </template>
