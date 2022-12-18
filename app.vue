@@ -5,9 +5,9 @@ import './prose-light.css'
 </script>
 
 <template>
-  <div max-w-900 mx-auto px-40 text-dark-9 dark:text-light-9>
+  <div max-w-690 mx-auto px-40 text-dark-9 dark:text-light-9>
     <Header />
-    <div>
+    <div py-40>
       <NuxtPage />
     </div>
   </div>

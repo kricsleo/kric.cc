@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main my->
     <BlogList />
   </main>
 </template>

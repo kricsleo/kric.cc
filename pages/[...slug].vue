@@ -1,5 +1,5 @@
 <template>
-  <article class="prose" py-40>
+  <article class="prose">
     <ContentDoc />
   </article>
 </template>
