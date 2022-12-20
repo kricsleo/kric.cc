@@ -1,5 +1,6 @@
 ---
 title: ts 笔记
+date: 2021-6-20 14:12
 ---
 
 # typescript

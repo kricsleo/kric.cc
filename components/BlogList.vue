@@ -12,7 +12,7 @@ const query: QueryBuilderParams = { path: '/', sort: [{ date: -1 }] }
         :to="article._path"
         text-20 py-10 block text-soft hover:text-highlight> 
         {{article.title}} 
-        <time v-if="article.date" block text-12 opacity80>{{article.date}}</time>
+        <time v-if="article.date" block text-12 opacity80>{{article.date.slice(0, 10)}}</time>
       </NuxtLink>
     </ContentList>
   </section>
