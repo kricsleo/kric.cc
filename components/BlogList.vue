@@ -1,6 +1,11 @@
+<script lang="ts" setup>
+import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types'
+const query: QueryBuilderParams = { path: '/', sort: [{ date: -1 }] }
+</script>
+
 <template>
   <section>
-    <ContentList v-slot="content">
+    <ContentList v-slot="content" :query="query">
       <NuxtLink 
         v-for="article in content.list" 
         :key="article._path"

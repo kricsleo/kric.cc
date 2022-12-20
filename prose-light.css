@@ -15,21 +15,7 @@ html.dark {
 
 .prose {
   color: var(--k-prose-text);
-}
-.prose .text-normal {
-  color: var(--k-prose-text);
-}
-.prose .text-highlight {
-  color: var(--k-prose-text-highlight);
-}
-.prose .text-soft {
-  color: var(--k-prose-text-soft);
-}
-.prose .bg-soft {
-  color: var(--k-prose-bg-soft);
-}
-.prose .font-mono {
-  font-family: var(--k-prose-font-mono);
+  font-size: 16px;
 }
 .prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
   color: var(--k-prose-text-highlight);
@@ -47,6 +33,9 @@ html.dark {
 }
 .prose h1 a, .prose h2 a, .prose h3 a, .prose h4 a, .prose h5 a, .prose h6 a {
   color: inherit;
+  box-shadow: none;
+}
+.prose h1 a:hover, .prose h2 a:hover, .prose h3 a:hover, .prose h4 a:hover, .prose h5 a:hover, .prose h6 a:hover {
   box-shadow: none;
 }
 .prose h1 {
