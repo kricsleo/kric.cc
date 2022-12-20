@@ -5,16 +5,17 @@ import './prose-light.css'
 </script>
 
 <template>
-  <div max-w-690 mx-auto px-40 text-dark-9 dark:text-light-9>
-    <Header />
-    <div py-40>
-      <NuxtPage />
+  <div normalize-scroll>
+    <div max-w-790 mx-auto px-40 text-dark-9 dark:text-light-9 >
+      <Header />
+      <div py-40>
+        <NuxtPage />
+      </div>
     </div>
   </div>
 </template>
 
 <style>
-
 ::-webkit-scrollbar {
   width: 1.1rem;
   height: 1.1rem;
@@ -55,6 +56,6 @@ import './prose-light.css'
 }
 
 html.dark {
-  background-color: #222222;
+  background-color: #050505;
 }
 </style>

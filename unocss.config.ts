@@ -25,6 +25,9 @@ export default defineConfig({
     ['y-center', 'flex items-center'],
   ],
   rules: [
-    ['normalize-scroll', {'padding-left': 'calc(100vw - 100%)'}]
+    ['normalize-scroll', {'padding-left': 'calc(100vw - 100%)'}],
+    ['text-normal', {color: 'var(--k-prose-text)'}],
+    ['text-highlight', {color: 'var(--k-prose-text-highlight)'}],
+    ['text-soft', {color: 'var(--k-prose-text-soft)'}],
   ]
 })
