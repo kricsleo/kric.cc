@@ -8,7 +8,7 @@ const active = computed(() => route.path === props.to)
 </script>
 
 <template>
-  <NuxtLink :to="to" text-soft hover:text-highlight :class="{'!text-highlight': active}">
+  <NuxtLink :to="to" text-soft hover:text-normal :class="{'!text-highlight': active}">
     <slot />
   </NuxtLink>
 </template>
