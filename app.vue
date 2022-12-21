@@ -6,7 +6,7 @@ import './prose-light.css'
 
 <template>
   <div normalize-scroll>
-    <div max-w-790 mx-auto px-40 text-dark-9 dark:text-light-9 >
+    <div max-w-700 mx-auto px-40 text-dark-9 dark:text-light-9 >
       <Header />
       <div py-40>
         <NuxtPage />
