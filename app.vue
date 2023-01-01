@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import '@unocss/reset/tailwind.css'
 import 'uno.css'
-import './prose-light.css'
+import './prose.css'
 </script>
 
 <template>
