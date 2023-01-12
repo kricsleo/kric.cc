@@ -10,7 +10,7 @@ const query: QueryBuilderParams = { path: '/', sort: [{ date: -1 }] }
         v-for="article in content.list" 
         :key="article._path"
         :to="article._path"
-        text-20 py-10 block text-soft hover:text-highlight> 
+        text-20 py-10 block text-normal hover:text-highlight> 
         {{article.title}} 
         <time v-if="article.date" block text-12 opacity80>{{article.date.slice(0, 10)}}</time>
       </NuxtLink>

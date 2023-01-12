@@ -5,7 +5,7 @@ import './prose.css'
 </script>
 
 <template>
-  <div normalize-scroll>
+  <div normalize-scroll min-h-100vh dark:bg-normal>
     <div max-w-750 mx-auto px-40 text-dark-9 dark:text-light-9 >
       <Header />
       <div py-40>
@@ -53,9 +53,5 @@ import './prose.css'
 }
 .dark * {
   border-color: rgba(229, 231, 235, 0.5)
-}
-
-html.dark {
-  background-color: #050505;
 }
 </style>

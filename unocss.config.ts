@@ -29,5 +29,6 @@ export default defineConfig({
     ['text-normal', {color: 'var(--k-prose-text)'}],
     ['text-highlight', {color: 'var(--k-prose-text-highlight)'}],
     ['text-soft', {color: 'var(--k-prose-text-soft)'}],
+    ['bg-normal', {'background-color': 'var(--k-prose-bg)'}],
   ]
 })
