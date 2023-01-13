@@ -1,10 +1,6 @@
 ---
 title: Docker 笔记
 date: 2018-09-10 13:19:34
-categories:
-  - tool
-tags:
-  - docker
 ---
 # docker学习笔记
 

@@ -1,10 +1,6 @@
 ---
 title: nginx 部署及配置笔记
 date: 2018-11-08 10:29:02
-categories:
-  - front-end
-tags:
-  - nginx
 ---
 
 # nginx 的部署与配置笔记

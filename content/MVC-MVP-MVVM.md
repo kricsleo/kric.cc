@@ -1,12 +1,6 @@
 ---
 title: MVC-MVP-MVVM 转载笔记
 date: 2018-09-28 19:51:24
-categories:
-    - front-end
-tags:
-    - MVC
-    - MVP
-    - MVVM
 ---
 
 # 关于 MV*

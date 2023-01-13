@@ -1,10 +1,6 @@
 ---
 title: git hooks 笔记
 date: 2019-05-15 11:16:57
-categories:
-  - tool
-tags:
-  - git
 ---
 
 # git hooks

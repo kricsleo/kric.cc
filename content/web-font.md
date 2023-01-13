@@ -1,11 +1,6 @@
 ---
 title: 网页字体加载过程及优化
 date: 2018-11-01 10:11:36
-categories:
-  - front-end
-tags:
-  - web-font
-  - css
 ---
 
 # 网页字体加载过程及优化

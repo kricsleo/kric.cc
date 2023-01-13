@@ -1,10 +1,6 @@
 ---
 title: CommonJS AMD CMD ES6 笔记
 date: 2018-09-25 16:49:17
-categories:
-    - front-end
-tags:
-    - 前端模块化
 ---
 
 # JavaScript 模块化

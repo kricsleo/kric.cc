@@ -1,11 +1,6 @@
 ---
 title: object defineProperty 笔记
-subtitle: Object.defineProperty
 date: 2018-10-08 00:06:51
-categories:
-  - front-end
-tags:
-  - object
 ---
 
 # 属性描述符

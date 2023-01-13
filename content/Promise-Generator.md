@@ -1,12 +1,6 @@
 ---
 title: Promise Generator
 date: 2018-10-18 10:33:04
-categories:
-  - front-end
-tags:
-  - callback
-  - promise
-  - async
 ---
 
 # 异步解决方案

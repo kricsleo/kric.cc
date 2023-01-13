@@ -1,10 +1,6 @@
 ---
 title: ES6的新特性-Proxy(代理)
 date: 2019-01-17 18:50:49
-categories:
-  - front-end
-tags:
-  - ES6
 ---
 
 # 拥抱ES6中的新API--Proxy

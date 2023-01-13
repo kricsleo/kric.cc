@@ -1,11 +1,6 @@
 ---
 title: elasticsearch 笔记
 date: 2019-05-08 10:53:26
-categories:
-  - database
-tags:
-  - nodejs
-  - elasticsearch
 ---
 
 # elasticsearch

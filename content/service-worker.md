@@ -1,10 +1,6 @@
 ---
 title: service worker 笔记
 date: 2018-11-04 21:32:46
-categories:
-  - front-end
-tags:
-  - service-worker
 ---
 
 # service-worker

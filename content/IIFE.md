@@ -1,10 +1,6 @@
 ---
 title: IIFE 翻译转载
 date: 2018-09-02 09:44:02
-categories:
-    - front-end
-tags:
-    - javascript
 ---
 # [增][转][译]JavaScript：立即执行函数表达式（IIFE）
 > 原文: https//benalman.com/news/2010/11/immediately-invoked-function-expression/#iife

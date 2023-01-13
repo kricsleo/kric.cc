@@ -1,11 +1,6 @@
 ---
 title: 冷门的toLocaleString
 date: 2019-04-25 10:04:25
-categories:
-  - front-end
-tags:
-  - toLocaleString
-  - 国际化
 ---
 
 # 冷门的`toLocaleString`

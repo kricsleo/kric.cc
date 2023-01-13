@@ -1,10 +1,6 @@
 ---
 title: h5的原生表单校验api
 date: 2019-02-25 11:38:04
-categories:
-  - front-end
-tags:
-  - h5
 ---
 
 # h5 原生表单校验api

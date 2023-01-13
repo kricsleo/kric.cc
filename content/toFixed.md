@@ -1,11 +1,6 @@
 ---
 title: js中toFixed精度问题
 date: 2019-03-15 10:41:44
-subtitle: toFixed的精度问题
-categories:
-  - front-end
-tags:
-  - js怪异事件录
 ---
 
 # JS 中的 `toFixed`精度问题

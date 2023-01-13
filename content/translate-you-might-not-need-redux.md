@@ -1,11 +1,6 @@
 ---
 title: 翻译<<You Might Not Need Redux>>
 date: 2019-04-15 16:06:39
-categories:
-  - translation
-tags:
-  - react
-  - redux
 ---
 
 # 翻译《You Might Not Need Redux》

@@ -1,10 +1,6 @@
 ---
 title: input 元素的事件顺序
 date: 2019-04-22 11:14:00
-categories:
-  - front-end
-tags:
-  - h5
 ---
 
 # input 元素的事件顺序

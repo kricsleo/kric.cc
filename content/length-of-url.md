@@ -1,10 +1,6 @@
 ---
 title: 关于URL长度的转载笔记
 date: 2018-11-07 16:42:49
-categories:
-  - front-end
-tags:
-  - HTTP
 ---
 
 # 关于URL长度的笔记

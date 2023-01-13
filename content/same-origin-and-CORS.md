@@ -1,12 +1,6 @@
 ---
 title: 浏览器同源策略
 date: 2018-10-16 11:06:36
-categories:
-   - front-end
-tags:
-   - same-origin
-   - CORS
-   - cookie
 ---
 
 # 浏览器同源策略

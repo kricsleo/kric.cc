@@ -1,10 +1,6 @@
 ---
 title: http 笔记
 date: 2018-10-12 10:29:30
-categories:
-  - http
-tags:
-  - http
 ---
 
 # http

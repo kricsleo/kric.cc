@@ -1,11 +1,6 @@
 ---
 title: yahoo网站速度优化的军规
 date: 2018-11-15 16:01:33
-categories:
-  - front-end
-tags:
-  - yahoo
-  - speed
 ---
 
 # yahoo 的网站优化实践军规

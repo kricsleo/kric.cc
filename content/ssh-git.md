@@ -1,11 +1,6 @@
 ---
 title: ssh及git笔记
 date: 2018-08-30 09:56:01
-tags:
-    - ssh
-    - git
-categories:
-    - tool
 ---
 
 # github的https和ssh连接方式探究

@@ -1,10 +1,6 @@
 ---
 title: js 堆栈
 date: 2018-09-22 23:44:52
-categories:
-    - front-end
-tags:
-    - JavaScript
 ---
 
 # JavaScript的内存机制及按值传递

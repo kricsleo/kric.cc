@@ -1,10 +1,6 @@
 ---
 title: http的Content-Type字段笔记
 date: 2018-10-12 10:32:51
-categories:
-  - http
-tags:
-  - Content-Type
 ---
 
 # Content-Type
