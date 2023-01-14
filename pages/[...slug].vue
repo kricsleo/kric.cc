@@ -1,5 +1,9 @@
 <template>
   <article class="prose">
-    <ContentDoc />
+    <ContentDoc>
+      <template #not-found>
+        No content here.
+      </template>
+    </ContentDoc>
   </article>
 </template>
