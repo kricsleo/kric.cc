@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
   modules: ['@nuxt/content', '@unocss/nuxt'],
   content: {
+    documentDriven: true,
     highlight: {
       theme: {
         default: 'vitesse-light',
