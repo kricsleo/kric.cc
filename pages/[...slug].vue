@@ -36,12 +36,16 @@ const limittedDepthToc = computed(() => {
 </script>
 
 <template>
-  <article class="prose">
-    <TOC fixed top-40 right-20 v-if="limittedDepthToc" :links="limittedDepthToc" />
-    <ContentDoc>
-      <template #not-found>
-        No content here.
-      </template>
-    </ContentDoc>
-  </article>
+  <div>
+    <nav fixed top-140 w-220 hidden xl:block class="left-[calc(50%+385px)]">
+      <TOC v-if="limittedDepthToc" :links="limittedDepthToc" />
+    </nav>
+    <article class="prose">
+      <ContentDoc>
+        <template #not-found>
+          No content here.
+        </template>
+      </ContentDoc>
+    </article>
+  </div>
 </template>
