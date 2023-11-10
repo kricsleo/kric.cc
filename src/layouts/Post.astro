@@ -1,0 +1,14 @@
+---
+import BaseLayout from './Base.astro'
+// import '@kricsleo/markdown-themes'
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<BaseLayout title={title}>
+  <slot />
+</BaseLayout>

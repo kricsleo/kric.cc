@@ -1,0 +1,28 @@
+{
+  "name": "kric.cc",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/vue": "^3.0.4",
+    "@kricsleo/markdown-themes": "^1.1.8",
+    "@vueuse/core": "^10.6.0",
+    "astro": "^3.5.0",
+    "vue": "^3.3.8"
+  },
+  "devDependencies": {
+    "@fontsource/barlow": "^5.0.8",
+    "@iconify-json/carbon": "^1.1.21",
+    "@unocss/reset": "^0.57.3",
+    "sass": "^1.69.5",
+    "typescript": "^5.2.2",
+    "unocss": "^0.57.3",
+    "unplugin-markdown-2-html": "^0.3.4"
+  }
+}

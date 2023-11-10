@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/Base.astro';
+
+const posts = await getCollection('posts');
+posts.map(post => post.slug)
+---
+<BaseLayout title="Posts">
+  <ul class="viewport grow-1 grid md:grid-cols-2 gap-y-2xl gap-x-7xl content-center items-center">
+    {posts.map(post => (
+      <li class="group">
+        <a class="truncate text text-xl group-hover:text-highlight transition-color" href={`/${post.slug}`}>
+          {post.data.title || 'Unknown post title'}
+        </a>
+        <br />
+        <time class="text-soft text-sm group-hover:text transition-color" datetime={new Date(post.data.date).toISOString()}>
+          {post.data.date.toISOString().split('T')[0]}
+        </time>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

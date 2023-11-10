@@ -1,0 +1,27 @@
+---
+import { getCollection } from 'astro:content';
+import PostLayout from '../layouts/Post.astro';
+import { createMarkdownRender } from 'unplugin-markdown-2-html/dist/renderer.js';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('posts');
+  return posts.map(post => ({
+    params: { slug: post.slug }, props: { post },
+  }));
+}
+
+const { post } = Astro.props
+const markdownRender = await createMarkdownRender({
+  highlight: {
+    theme: {
+      default: 'akamud.vscode-theme-onelight.Atom One Light',
+      dark: 'kricsleo.gentle-clean.Gentle Clean Vitesse'
+    }
+  }
+})
+const rendered = markdownRender(post.body)
+---
+<PostLayout title={post.data.title}>
+  {rendered.css && <style set:html={rendered.css} />}
+  <artile class="prose viewport mb-5xl" set:html={rendered.html} />
+</PostLayout>
