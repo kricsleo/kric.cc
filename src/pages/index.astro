@@ -1,7 +1,15 @@
 ---
 import BaseLayout from '../layouts/Base.astro'
+import Hello from '../components/Hello.astro'
 ---
 
 <BaseLayout title="Home">
-  <h1 class="grow-1 center text-3xl font-mono">Hi</h1>
+  <main class="grow-1 center">
+    <h1 class="text-3xl font-mono">
+      <Hello />
+      <br />
+      <br />
+      I'm Kricsleo.
+    </h1>
+  </main>
 </BaseLayout>

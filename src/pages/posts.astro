@@ -6,10 +6,10 @@ const posts = await getCollection('posts');
 posts.map(post => post.slug)
 ---
 <BaseLayout title="Posts">
-  <ul class="viewport grow-1 grid md:grid-cols-2 gap-y-2xl gap-x-7xl content-center items-center">
+  <ul class="viewport grow-1 grid md:grid-cols-2 gap-y-2xl gap-x-6xl content-center items-center">
     {posts.map(post => (
-      <li class="group">
-        <a class="truncate text text-xl group-hover:text-highlight transition-color" href={`/${post.slug}`}>
+      <li class="truncate group">
+        <a class="text text-xl group-hover:text-highlight transition-color" href={`/${post.slug}`}>
           {post.data.title || 'Unknown post title'}
         </a>
         <br />
