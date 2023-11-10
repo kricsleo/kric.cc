@@ -38,5 +38,5 @@ export const HELLO = [
   { "lang": "Slovak", "lang_cn":"斯洛伐克语", "text": "Ahoj" },
   { "lang": "Swedish", "lang_cn":"瑞典语", "text": "Hej" },
   { "lang": "Thai", "lang_cn":"泰语", "text": "สวัสดี" },
-  { "lang": "Ukrainian", "lang_cn":"乌克兰语", "text": "Привіт" }
+  { "lang": "Ukrainian", "lang_cn":"乌克兰语", "text": "Привіт" },
 ]

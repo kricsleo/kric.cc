@@ -1,15 +1,15 @@
 ---
 import BaseLayout from '../layouts/Base.astro'
-import Hello from '../components/Hello.astro'
+import Hello from '../components/Hello.vue'
 ---
 
 <BaseLayout title="Home">
   <main class="grow-1 center">
     <h1 class="text-3xl font-mono">
-      <Hello />
+      <Hello client:idle />
+      <!-- <br />
       <br />
-      <br />
-      I'm Kricsleo.
+      I'm Kricsleo. -->
     </h1>
   </main>
 </BaseLayout>
