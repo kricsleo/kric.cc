@@ -56,7 +56,7 @@ function shuffle<T extends any[]>(list: T): T {
     <span 
       v-for="char, idx in hello.chars" 
       :key="idx + Math.random()" 
-      class="fade" 
+      class="fade text-5xl" 
       :style="{
         animationDelay: `${char.fadeIn}ms, ${char.fadeOut}ms`,
         animationDuration: `${char.interval}ms`
