@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onBeforeMount, onMounted, ref } from 'vue';
+import { computed, onBeforeMount, ref } from 'vue';
 import { HELLO } from '../data/data'
 
 const hellos = ref(genHellos(HELLO.slice(0, 1)))

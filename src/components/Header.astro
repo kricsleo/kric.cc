@@ -1,12 +1,18 @@
 ---
 import Theme from './Theme.vue'
 
+const path = new URL(Astro.url).pathname.replace(/\/$/, '')
+const links = [
+  { path: '/', name: 'Home' },
+  { path: '/posts', name: 'Posts' },
+].map(link => ({ ...link, active: path === link.path }))
 ---
 
 <header>
-  <nav class="viewport y-center justify-end gap-xl text-2xl py-sm">
-    <a href="/" class="nav-link">Home</a>
-    <a href="/posts" class="nav-link">Posts</a>
+  <nav class="viewport y-center justify-end gap-xl text-2xl py-3xl">
+    {links.map(link => (
+      <a href={link.path} class:list={['nav-link', {'text-highlight': link.active }]}>{link.name}</a>
+    ))}
     <a href="https://github.com/kricsleo" target="_blank" class="i-carbon:logo-github nav-link" />
     <Theme class="nav-link!" client:idle />
   </nav>

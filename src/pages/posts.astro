@@ -2,19 +2,24 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/Base.astro';
 
-const posts = await getCollection('posts');
-posts.map(post => post.slug)
+const rawPosts = await getCollection('posts')
+const posts = rawPosts.sort((a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf())
+  .map(post => ({ 
+    slug: post.slug, 
+    title: post.data.title, 
+    date: new Date(post.data.date).toISOString().split('T')[0]
+  }))
 ---
 <BaseLayout title="Posts">
-  <ul class="viewport grow-1 grid md:grid-cols-2 gap-y-2xl gap-x-6xl content-center items-center">
+  <ul class="viewport grow-1 grid md:grid-cols-2 gap-y-4xl gap-x-6xl content-center items-center py-7xl">
     {posts.map(post => (
       <li class="truncate group">
         <a class="text text-xl group-hover:text-highlight transition-color" href={`/${post.slug}`}>
-          {post.data.title || 'Unknown post title'}
+          {post.title}
         </a>
         <br />
-        <time class="text-soft text-sm group-hover:text transition-color" datetime={new Date(post.data.date).toISOString()}>
-          {post.data.date.toISOString().split('T')[0]}
+        <time class="text-soft text-sm group-hover:text transition-color" datetime={post.date}>
+          {post.date}
         </time>
       </li>
     ))}
