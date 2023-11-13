@@ -13,7 +13,11 @@ const links = [
     {links.map(link => (
       <a href={link.path} class:list={['nav-link', {'text-highlight': link.active }]}>{link.name}</a>
     ))}
-    <a href="https://github.com/kricsleo" target="_blank" class="i-carbon:logo-github nav-link" />
+    <a 
+      href="https://github.com/kricsleo" 
+      target="_blank" 
+      class="i-carbon:logo-github nav-link"
+      aria-label="github" />
     <Theme class="nav-link!" />
   </nav>
 </header>
