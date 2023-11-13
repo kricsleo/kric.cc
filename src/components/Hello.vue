@@ -9,7 +9,7 @@ onBeforeMount(() => refresh(0))
 
 function refresh(timeout: number) {
   setTimeout(() => {
-    hellos.value = genHellos([HELLO[0], ...shuffle(HELLO.slice(1))])
+      hellos.value = genHellos([HELLO[0], ...shuffle(HELLO.slice(1))])
     refresh(refreshDuration.value)
   }, timeout)
 }

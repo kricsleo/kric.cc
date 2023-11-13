@@ -21,3 +21,8 @@ html {
     background: lighten(#050505, 20%);
   }
 }
+
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-corner {
+  display: none;
+}
