@@ -1,9 +1,0 @@
-<script>
-import { useDark, useToggle } from '@vueuse/core'
-
-const toggleDark = useToggle(useDark())
-const btn = document.getElementById('theme')
-btn?.addEventListener('click', () => toggleDark())
-</script>
-
-<button id="theme" class="i-carbon:sun dark:i-carbon:moon" />

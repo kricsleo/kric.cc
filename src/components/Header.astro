@@ -1,5 +1,5 @@
 ---
-import Theme from './Theme.vue'
+import Theme from './Theme.astro'
 
 const path = new URL(Astro.url).pathname.replace(/\/$/, '')
 const links = [
@@ -14,6 +14,6 @@ const links = [
       <a href={link.path} class:list={['nav-link', {'text-highlight': link.active }]}>{link.name}</a>
     ))}
     <a href="https://github.com/kricsleo" target="_blank" class="i-carbon:logo-github nav-link" />
-    <Theme class="nav-link!" client:idle />
+    <Theme class="nav-link!" />
   </nav>
 </header>

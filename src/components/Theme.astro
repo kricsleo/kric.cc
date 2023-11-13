@@ -1,0 +1,17 @@
+<button id="theme" class="i-carbon:sun dark:i-carbon:moon nav-link!" />
+
+<script is:inline>
+  const themeKey = 'color-scheme'
+  const theme = localStorage.getItem(themeKey) 
+    || window.matchMedia("(prefers-color-scheme: dark)").matches 
+      ? 'dark' : 'light'
+
+  theme === "dark"
+    ? document.documentElement.classList.add("dark")
+    : document.documentElement.classList.remove("dark")
+
+  document.getElementById("theme").addEventListener("click", () => {
+    localStorage.setItem(themeKey, theme === "dark" ? "light" : "dark")
+    document.documentElement.classList.toggle("dark")
+  })
+</script>
