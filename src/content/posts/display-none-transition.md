@@ -11,9 +11,9 @@ date: 2023-11-14
 
 ## 演示
 
-例如这个 [demo](https://codepen.io/kricsleo/pen/MWLvLVz), 你可以点击第一个按钮 "Toggle Directly", 这会切换下面父元素`diplay:none` <-> `display:block`, 同时也会切换其子元素的背景色`background:teal` <-> `background:sky`. 
+例如这个 [demo](https://codepen.io/kricsleo/pen/MWLvLVz), 你可以点击第一个按钮 "Toggle Directly", 这会切换下面父元素`diplay:none` <-> `display:block`, 同时也会切换其子元素的背景色`opacity:0` <-> `opacity:1`. 
 
-由于我在子元素上应用了动画`transition:background 1s`, 理论上我应该可以看到子元素从隐藏变为显示的过程中背景色逐渐变化才对, 但是实际上子元素不会有任何渐变过程, 而是直接变成终态.
+由于我在子元素上应用了动画`transition:opacity 1s`, 理论上我应该可以看到子元素从隐藏变为显示的过程中背景色透明度变化过程才对, 但是实际上子元素不会有任何渐变过程, 而是直接变成终态.
 
 ```ts
 btn.addEventListener('click', () => {
