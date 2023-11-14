@@ -10,7 +10,7 @@ export default defineConfig({
     presetIcons(),
   ],
   shortcuts: [
-    ['viewport', 'block max-w-650px mx-auto px-3xl'],
+    ['viewport', 'block max-w-[min(100%,650px)] mx-auto px-3xl'],
     ['center', 'flex justify-center items-center'],
     ['x-center', 'flex justify-center'],
     ['y-center', 'flex items-center'],
