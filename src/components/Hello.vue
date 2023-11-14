@@ -46,9 +46,9 @@ function shuffle<T extends any[]>(list: T): T {
   <span 
     v-for="hello, idx in hellos" 
     :key="idx + Math.random()"
-    class="ws-nowrap absolute left-0">
+    :class="['ws-nowrap left-0', {absolute: idx !== 0}]">
     <span 
-      class="fade text-soft text-sm absolute bottom-0 right-100% mr-sm"
+      class="fade text-soft text-sm absolute bottom-110% mr-sm"
       :style="{
         animationDelay: `${hello.chars[0].fadeIn}ms, ${hello.chars[0].fadeOut}ms`,
         animationDuration: '150ms'

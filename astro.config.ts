@@ -13,10 +13,8 @@ export default defineConfig({
   },
   integrations: [
     vue(), 
-    UnoCSS({
-      injectReset: true
-    }), 
-  robotsTxt(), 
-  sitemap(),
-]
+    UnoCSS({ injectReset: true }), 
+    robotsTxt(), 
+    sitemap(),
+  ]
 });
