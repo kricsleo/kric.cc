@@ -11,7 +11,7 @@ date: 2023-11-14
 
 ## 演示
 
-例如这个 [demo](https://codepen.io/Leo-Krics/pen/wvNqQdQ), 你可以点击第一个按钮 "Toggle Directly", 这会切换下面父元素`diplay:none` <-> `display:block`, 同时也会切换其子元素的背景色`background:teal` <-> `background:sky`. 
+例如这个 [demo](https://codepen.io/kricsleo/pen/MWLvLVz), 你可以点击第一个按钮 "Toggle Directly", 这会切换下面父元素`diplay:none` <-> `display:block`, 同时也会切换其子元素的背景色`background:teal` <-> `background:sky`. 
 
 由于我在子元素上应用了动画`transition:background 1s`, 理论上我应该可以看到子元素从隐藏变为显示的过程中背景色逐渐变化才对, 但是实际上子元素不会有任何渐变过程, 而是直接变成终态.
 
@@ -22,9 +22,9 @@ btn.addEventListener('click', () => {
 })
 ```
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/Leo-Krics/embed/wvNqQdQ?default-tab=" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href="https://codepen.io/Leo-Krics/pen/wvNqQdQ">
-  Untitled</a> by Leo Krics (<a href="https://codepen.io/Leo-Krics">@Leo-Krics</a>)
+<iframe height="300" style="width: 100%;" scrolling="no" title="display-none-transition" src="https://codepen.io/kricsleo/embed/MWLvLVz?default-tab=" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href="https://codepen.io/kricsleo/pen/MWLvLVz">
+  display-none-transition</a> by kricsleo (<a href="https://codepen.io/kricsleo">@kricsleo</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
 
