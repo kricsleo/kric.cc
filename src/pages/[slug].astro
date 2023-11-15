@@ -6,7 +6,7 @@ import { createMarkdownRender } from 'unplugin-markdown-2-html/dist/renderer.js'
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
   return posts.map(post => ({
-    params: { slug: post.slug }, props: { post },
+    params: { slug: post.slug.replace(/draft$/, '') }, props: { post },
   }));
 }
 

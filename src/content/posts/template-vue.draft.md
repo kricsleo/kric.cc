@@ -1,7 +1,6 @@
 ---
 title: build your vue template
 date: 2021-12-27 20:40:01
-draft: true
 ---
 
 # 建立和使用你自己的 vue 模板
