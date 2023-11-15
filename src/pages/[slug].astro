@@ -23,5 +23,5 @@ const rendered = markdownRender(post.body)
 ---
 <PostLayout title={post.data.title}>
   {rendered.css && <style set:html={rendered.css} />}
-  <artile class="prose viewport my-6xl" set:html={rendered.html} />
+  <artile class="prose viewport py-4xl" set:html={rendered.html} />
 </PostLayout>
