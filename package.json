@@ -3,18 +3,18 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "dev": "astro dev --port 4000",
+    "start": "npm run dev",
     "build": "astro build",
-    "preview": "astro preview",
+    "preview": "astro preview --port 4000",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.0.3",
     "@astrojs/vue": "^3.0.4",
     "@kricsleo/markdown-themes": "^1.1.10",
-    "@vueuse/core": "^10.6.0",
-    "astro": "^3.5.0",
+    "@vueuse/core": "^10.6.1",
+    "astro": "^3.5.4",
     "astro-robots-txt": "^1.0.0",
     "typed.js": "^2.1.0",
     "vue": "^3.3.8"
@@ -22,10 +22,10 @@
   "devDependencies": {
     "@fontsource/barlow": "^5.0.8",
     "@iconify-json/carbon": "^1.1.21",
-    "@unocss/reset": "^0.57.3",
+    "@unocss/reset": "^0.57.4",
     "sass": "^1.69.5",
     "typescript": "^5.2.2",
-    "unocss": "^0.57.3",
+    "unocss": "^0.57.4",
     "unplugin-markdown-2-html": "^0.3.4"
   }
 }
