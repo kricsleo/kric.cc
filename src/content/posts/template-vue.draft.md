@@ -3,8 +3,6 @@ title: build your vue template
 date: 2021-12-27 20:40:01
 ---
 
-# 建立和使用你自己的 vue 模板
-
 vue 提供的 vue cli 不仅可以按照默认的 vue 模板来初始化一个新项目, 也可以通过指定一个模板来初始化新项目
 
 - TODO: complete this note.

@@ -20,8 +20,13 @@ const markdownRender = await createMarkdownRender({
   }
 })
 const rendered = markdownRender(post.body)
+const date = new Date(post.data.date).toISOString().split('T')[0]
 ---
 <PostLayout title={post.data.title}>
   {rendered.css && <style set:html={rendered.css} />}
-  <artile class="prose viewport py-4xl" set:html={rendered.html} />
+  <main class="prose viewport py-4xl">
+    <h1>{post.data.title}</h1>
+    <time class="text-soft" datetime={date}> {date} </time>
+    <artile class="mt-6xl block" set:html={rendered.html} />
+  </main>
 </PostLayout>

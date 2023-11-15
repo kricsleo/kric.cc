@@ -2,7 +2,7 @@
 title: ASCII Unicode UTF8 编码笔记
 date: 2018-09-05 17:33:51
 ---
-# ASCII, Unicode和UTF8之间的关系
+
 本文主要了解一下ASCII码、Unicode码和UTF-8码的来源和相互之间的关系, 顺便也理了一下中文编码GB2312, GBK, GB18030的关系。
 <!-- more -->
 

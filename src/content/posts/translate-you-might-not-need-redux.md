@@ -3,8 +3,6 @@ title: 翻译<<You Might Not Need Redux>>
 date: 2019-04-15 16:06:39
 ---
 
-# 翻译《You Might Not Need Redux》
-
 闲来无事, 翻译下我挺喜欢的一个程序员 [Dan Abromov](https://overreacted.io/) 的一篇文章[《You Might Not Need Redux》](https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367), 因为我对于 redux 的用法也还很浅显, 里面也还存在着错误的用法, 多看看别人的一些优秀的工程, 慢慢会有更好的体会吧.
 
 以下为翻译.

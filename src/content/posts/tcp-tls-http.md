@@ -3,8 +3,6 @@ title: TCP → TLS → HTTP 连接协商
 date: 2022-07-10 11:38
 ---
 
-# TCP → TLS → HTTP 连接协商
-
 HTTP/1和HTTP/2都是建立在TCP连接的基础上
 
 ### 如何建立TCP连接？

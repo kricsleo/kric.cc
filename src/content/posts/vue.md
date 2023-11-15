@@ -3,7 +3,6 @@ title: vue 笔记
 date: 2021-4-20 14:12
 ---
 
-# vue
 
 - [x] $slots与$scopedSlots在2.5与2.6之间的父子组件重复渲染验证
 

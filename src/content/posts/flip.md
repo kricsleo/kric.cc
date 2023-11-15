@@ -3,8 +3,6 @@ title: FLIP方式来实现css动画
 date: 2021-08-06 12:00:00
 ---
 
-# FLIP
-
 最近在看vue文档的时候, 文档里面提到vue的`<transition>`是使用的[`FLIP`](https://aerotwist.com/blog/pixels-are-expensive/)技术实现的, 我看了一下这个`FLIP`感觉还挺有意思的, 他利用触发浏览器强制布局(`layout`)的方式来计算初始位置和最终位置的偏差值来做动画, 这个想法还挺秒的, 这里记录一下具体原理和一些实现的demo, 原文是[Pixels are expensive](https://aerotwist.com/blog/pixels-are-expensive/), 这篇文章中的视频和链接文章也很值得一看, 不要跳过
 
 ## 先分析浏览器绘制dom的步骤

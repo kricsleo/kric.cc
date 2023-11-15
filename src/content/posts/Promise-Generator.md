@@ -3,8 +3,6 @@ title: Promise Generator
 date: 2018-10-18 10:33:04
 ---
 
-# 异步解决方案
-
 本文是为了解js的异步操作解决方案发展过程. 从原始的回调地狱到ES6的`Promise`和`Generator`再到ES7提案阶段的`async`.
 这篇笔记也拖了好久了, 该是时候丰富一下了.
 

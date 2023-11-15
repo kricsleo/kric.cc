@@ -3,7 +3,6 @@ title: BFC 笔记
 date: 2019-02-25
 ---
 
-# BFC (BLOCK FORMATTING CONTEXT)
 关于 BFC (BLOCK FORMATTING CONTEXT: 块格式化上下文)这个专有名词可能听得不多, 但是在实际的页面布局中实际上却是会经常碰到的, 只是没有特意去注意这个现象而已, 这里记录一下它是如何影响我们的布局的.
 <!-- more -->
 

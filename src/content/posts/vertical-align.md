@@ -3,8 +3,6 @@ title: inline-block 的 baseline 位置
 date: 2021-5-20 14:12
 ---
 
-# inline-block 的 baseline 位置
-
 今天又着了`vertical-align`的道了
 
 场景：多个`display:inline-block`的`div`排在一行，他们的宽高内外边距都是相同的，唯一不同的是`div`里面的多行文本，有的是一行，有的是多行，然后`div`就会在水平方向参差不齐，如下

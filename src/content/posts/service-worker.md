@@ -3,8 +3,6 @@ title: service worker 笔记
 date: 2018-11-04 21:32:46
 ---
 
-# service-worker
-
 service worker (服务工作线程)可以为网页提供离线访问的功能, 除此之外当然也有**推送通知**和**后台同步**的功能, 它是一种 JavaScript 线程, 可以独立在主线程外独立运行, 但是无法直接访问和操作 DOM , 服务工作线程通过响应 postMessage 接口发送的消息来与其控制的页面通信, 页面可在必要时对 DOM 执行操作.
 <!-- more -->
 

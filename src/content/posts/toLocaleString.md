@@ -3,8 +3,6 @@ title: 冷门的toLocaleString
 date: 2019-04-25 10:04:25
 ---
 
-# 冷门的`toLocaleString`
-
 js 里面除了我们日常使用的api以外, 其实还是有不少大多数人都不知道的很好用的api的, `toLocaleString`算一个, 也许你在面试题中看到过用正则来实现数字千位用逗号分隔的做法, 但是如果你能直接说出`toLocaleString`, 应该是出乎面试官的意料的, 而它的用法可不止于此.
 
 `toLocaleString`方法在`Numnber`和`Date`类型上都有部署, 实现的作用都是格式化数字或者日期, 返回格式化后的字符串.

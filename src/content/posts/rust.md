@@ -2,7 +2,6 @@
 title: rust 笔记
 date: 2022-8-20 14:12
 ---
-# rust
 
 ## `String`vs`&String`vs`&str`
 

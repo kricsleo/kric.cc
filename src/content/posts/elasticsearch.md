@@ -3,8 +3,6 @@ title: elasticsearch 笔记
 date: 2019-05-08 10:53:26
 ---
 
-# elasticsearch
-
 我的博客之前的搜索都是使用的[`hexo-generator-json-content`](https://github.com/alexbruno/hexo-generator-json-content)这个插件来生成的静态json文件, 在搜索的时候会去请求这个json文件, 里面是整个博客站点的文章数据, 随着博客的数量变多, 这个文件也越来越大, 导致第一次搜索的时候下载这个文件就会出现很长时间的等待, 所以也一直想要优化博客的搜索.
 
 之前做爬虫的时候使用过[`elasticsearch`](https://www.elastic.co/cn/)这个全文检索库, 感觉检索非常方便和快速, 所以这次有时间了就把博客的搜索完全迁移到了es上, 另外还顺带写了一个自动同步 hexo 博客数据到 es 里面的插件[`hexo-elasticsearch`](https://www.npmjs.com/package/hexo-elasticsearch)

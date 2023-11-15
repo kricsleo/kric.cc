@@ -3,8 +3,6 @@ title: ts 笔记
 date: 2021-6-20 14:12
 ---
 
-# typescript
-
 对于初学者可以参考这篇[typescript入门](/typescript-guide)
 
 以下内容为部分不易理解的地方，特意记录

@@ -3,7 +3,6 @@ title: webAssembly和rust笔记
 date: 2021-11-25 11:25:03
 ---
 
-# webAssembly 与 rust
 
 ## webAssembly 历史及支持程度
 

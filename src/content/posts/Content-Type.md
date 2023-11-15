@@ -3,8 +3,6 @@ title: http的Content-Type字段笔记
 date: 2018-10-12 10:32:51
 ---
 
-# Content-Type
-
 `HTTP/1.1`协议规定的`HTTP`请求方法有`OPTIONS`、`GET`、`HEAD`、`POST`、`PUT`、`DELETE`、`TRACE`、`CONNECT`这几种, 用的最多的是`GET`和`POST`, 这里主要说一下提交请求时的请求头中`Content-Type`字段
 <!-- more -->
 
