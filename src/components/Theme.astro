@@ -1,25 +1,87 @@
 <button id="theme" class="i-carbon:sun dark:i-carbon:moon nav-link!" title="toggle theme" />
 
 <script is:inline>
+  const theme = localStorage.getItem('color-scheme') 
+      || (window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light')
+  theme === 'dark' && document.documentElement.classList.add('dark')
+</script>
+
+<script>
   init()
   document.addEventListener('astro:after-swap', init)
 
   function init() {
-    updateTheme(queryTheme())
-    document.getElementById("theme").addEventListener("click", () => {
-      const nextTheme = queryTheme() === "dark" ? "light" : "dark"
-      localStorage.setItem('color-scheme', nextTheme)
-      updateTheme(nextTheme)
+    const theme = localStorage.getItem('color-scheme') 
+      || (window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light')
+    theme === 'dark' && document.documentElement.classList.add('dark')
+    document.getElementById("theme")!.addEventListener("click", toggleDark)
+  }
+
+  // Ported from https://github.com/vuejs/vitepress/pull/2347
+  function toggleDark(event: MouseEvent) {
+  // @ts-expect-error: Transition API
+    const isAppearanceTransition = document.startViewTransition
+      && !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (!isAppearanceTransition) {
+      toggleTheme()
+      return
+    }
+    const x = event.clientX
+    const y = event.clientY
+    const endRadius = Math.hypot(
+      Math.max(x, innerWidth - x),
+      Math.max(y, innerHeight - y),
+    )
+    // @ts-expect-error: Transition API
+    const transition = document.startViewTransition(toggleTheme)
+    transition.ready.then(() => {
+      const clipPath = [
+        `circle(0px at ${x}px ${y}px)`,
+        `circle(${endRadius}px at ${x}px ${y}px)`,
+      ]
+      const isDark = queryTheme() === 'dark'
+      document.documentElement.animate(
+        {
+          clipPath: isDark ? [...clipPath].reverse() : clipPath,
+        },
+        {
+          duration: 300,
+          easing: 'ease-in',
+          pseudoElement: isDark ? '::view-transition-old(root)' : '::view-transition-new(root)',
+        },
+      )
     })
+  }
+
+  function toggleTheme() {
+    const theme = queryTheme() === "dark" ? "light" : "dark"
+    localStorage.setItem('color-scheme', theme)
+    document.documentElement.classList.toggle("dark")
   }
 
   function queryTheme() {
     return localStorage.getItem('color-scheme') 
       || (window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light')
   }
-  function updateTheme(theme) {
-    theme === "dark"
-      ? document.documentElement.classList.add("dark")
-      : document.documentElement.classList.remove("dark")
-  }
 </script>
+
+<style is:global>
+/** Page transition */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-old(root) {
+  z-index: 99;
+}
+::view-transition-new(root) {
+  z-index: 999;
+}
+.dark::view-transition-old(root) {
+  z-index: 999;
+}
+.dark::view-transition-new(root) {
+  z-index: 99;
+}
+</style>
