@@ -13,7 +13,7 @@
   "dependencies": {
     "@astrojs/sitemap": "^3.0.3",
     "@astrojs/vue": "^3.0.4",
-    "@kricsleo/markdown-themes": "^1.1.10",
+    "@kricsleo/markdown-themes": "^1.1.11",
     "@vueuse/core": "^10.6.1",
     "astro": "^3.5.4",
     "astro-robots-txt": "^1.0.0",

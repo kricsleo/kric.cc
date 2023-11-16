@@ -1,5 +1,5 @@
 ---
-title: diplay:none "遮蔽"子元素 transition
+title: display:none "遮蔽"子元素 transition
 date: 2023-11-14
 ---
 
@@ -11,7 +11,7 @@ date: 2023-11-14
 
 ## 演示
 
-如下 [demo](https://codepen.io/kricsleo/pen/MWLvLVz), 你可以点击第一个按钮 "Toggle Directly", 这会直接切换父元素`diplay:none` <-> `display:block`, 同时也会切换其子元素透明度`opacity:0` <-> `opacity:1`. 
+如下 [demo](https://codepen.io/kricsleo/pen/MWLvLVz), 你可以点击第一个按钮 "Toggle Directly", 这会直接切换父元素`display:none` <-> `display:block`, 同时也会切换其子元素透明度`opacity:0` <-> `opacity:1`. 
 
 由于我在子元素上应用了过渡`transition:opacity 1s`, 理论上我应该可以看到子元素从隐藏变为显示的过程中透明度渐变才对, 但是实际上子元素不会有任何渐变过程, 而是直接变成终态.
 

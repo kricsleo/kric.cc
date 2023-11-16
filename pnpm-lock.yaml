@@ -12,8 +12,8 @@ dependencies:
     specifier: ^3.0.4
     version: 3.0.4(@babel/core@7.23.2)(astro@3.5.4)(vite@4.5.0)(vue@3.3.8)
   '@kricsleo/markdown-themes':
-    specifier: ^1.1.10
-    version: 1.1.10
+    specifier: ^1.1.11
+    version: 1.1.11
   '@vueuse/core':
     specifier: ^10.6.1
     version: 10.6.1(vue@3.3.8)
@@ -880,8 +880,8 @@ packages:
       '@jridgewell/resolve-uri': 3.1.1
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@kricsleo/markdown-themes@1.1.10:
-    resolution: {integrity: sha512-lIkRnFqn6M8sdT2n61zdQEMibLPCFfiufRAvD10c/bqtXiU0X1aX/nbhm5MjwXk7+GLJt0Z8d9iyaHdDl1iXhw==}
+  /@kricsleo/markdown-themes@1.1.11:
+    resolution: {integrity: sha512-9Dv7fcH/6Rus70txN5fv053YHX+RGWJYsdqV7Rfk5J3TCQV6QNSej2W57iwplrgySRUJ13bAQjVuu5xefdnCPA==}
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:
