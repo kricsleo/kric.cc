@@ -24,9 +24,9 @@ const date = new Date(post.data.date).toISOString().split('T')[0]
 ---
 <PostLayout title={post.data.title}>
   {rendered.css && <style set:html={rendered.css} />}
-  <main class="prose viewport py-4xl">
-    <h1>{post.data.title}</h1>
+  <main class="prose viewport pt-4xl pb-8xl">
+    <h1 class="!mb-1">{post.data.title}</h1>
     <time class="text-soft" datetime={date}> {date} </time>
-    <artile class="mt-6xl block" set:html={rendered.html} />
+    <artile class="mt-5xl block" set:html={rendered.html} />
   </main>
 </PostLayout>

@@ -9,7 +9,7 @@ const links = [
 ---
 
 <header>
-  <nav class="viewport y-center justify-end gap-xl text-2xl py-3xl">
+  <nav class="viewport y-center justify-end gap-xl text-2xl py-lg">
     {links.map(link => (
       <a href={link.path} class:list={['nav-link', {'text-highlight': link.active }]}>{link.name}</a>
     ))}
