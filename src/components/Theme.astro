@@ -1,13 +1,25 @@
 <button id="theme" class="i-carbon:sun dark:i-carbon:moon nav-link!" title="toggle theme" />
 
 <script is:inline>
-  const theme = localStorage.getItem('color-scheme') 
-    || (window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light')
-  theme === "dark"
-    ? document.documentElement.classList.add("dark")
-    : document.documentElement.classList.remove("dark")
-  document.getElementById("theme").addEventListener("click", () => {
-    localStorage.setItem('color-scheme', theme === "dark" ? "light" : "dark")
-    document.documentElement.classList.toggle("dark")
-  })
+  init()
+  document.addEventListener('astro:after-swap', init)
+
+  function init() {
+    updateTheme(queryTheme())
+    document.getElementById("theme").addEventListener("click", () => {
+      const nextTheme = queryTheme() === "dark" ? "light" : "dark"
+      localStorage.setItem('color-scheme', nextTheme)
+      updateTheme(nextTheme)
+    })
+  }
+
+  function queryTheme() {
+    return localStorage.getItem('color-scheme') 
+      || (window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light')
+  }
+  function updateTheme(theme) {
+    theme === "dark"
+      ? document.documentElement.classList.add("dark")
+      : document.documentElement.classList.remove("dark")
+  }
 </script>

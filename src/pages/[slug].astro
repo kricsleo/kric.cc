@@ -1,6 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import PostLayout from '../layouts/Post.astro';
+import BaseLayout from '../layouts/Base.astro';
 import { createMarkdownRender } from 'unplugin-markdown-2-html/dist/renderer.js';
 
 export async function getStaticPaths() {
@@ -22,11 +22,11 @@ const markdownRender = await createMarkdownRender({
 const rendered = markdownRender(post.body)
 const date = new Date(post.data.date).toISOString().split('T')[0]
 ---
-<PostLayout title={post.data.title}>
+<BaseLayout title={post.data.title}>
   {rendered.css && <style set:html={rendered.css} />}
   <main class="prose viewport pt-4xl pb-8xl">
     <h1 class="!mb-1">{post.data.title}</h1>
     <time class="text-soft" datetime={date}> {date} </time>
     <artile class="mt-5xl block" set:html={rendered.html} />
   </main>
-</PostLayout>
+</BaseLayout>
