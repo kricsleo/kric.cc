@@ -1,0 +1,10 @@
+<script>
+document.addEventListener('astro:after-swap', () => {
+  console.log('astro:after-swap')
+})
+document.addEventListener('astro:page-load', () => {
+  console.log('page-load')
+})
+</script>
+
+<div class="h-1px w-full fixed top-0 bg-teal" />
