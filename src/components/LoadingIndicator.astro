@@ -1,10 +1,31 @@
 <script>
-document.addEventListener('astro:after-swap', () => {
-  console.log('astro:after-swap')
+document.addEventListener('astro:before-preparation', () => {
+  const loading = document.querySelector('#loading')
+  loading!.classList.add('loading')
 })
-document.addEventListener('astro:page-load', () => {
-  console.log('page-load')
+document.addEventListener('astro:before-swap', () => {
+  const loading = document.querySelector('#loading')
+  loading!.classList.remove('loading')
 })
 </script>
 
-<div class="h-1px w-full fixed top-0 bg-teal" />
+<div id="loading" class="h-1px w-full fixed top-0 bg-teal" />
+
+<style>
+#loading {
+  opacity: 0;
+}
+#loading.loading {
+  animation: loading 1.5s cubic-bezier(.02, .01, .47, 1) forwards 150ms;
+}
+@keyframes loading {
+  0% {
+    opacity: 1;
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 90%;
+  }
+}
+</style>

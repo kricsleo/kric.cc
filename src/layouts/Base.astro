@@ -1,10 +1,10 @@
 ---
 import { ViewTransitions } from 'astro:transitions'
-import Header from '../components/Header.astro'
 import '@fontsource/barlow/400.css'
-import '../styles/global.scss'
 import '@kricsleo/markdown-themes'
-// import LoadingIndicator from '../components/LoadingIndicator.astro'
+import '../styles/global.scss'
+import Header from '../components/Header.astro'
+import LoadingIndicator from '../components/LoadingIndicator.astro'
 
 interface Props {
 	title: string;
@@ -25,9 +25,8 @@ const { title } = Astro.props;
 		<ViewTransitions />
 	</head>
 	<body class="bg min-h-100vh flex flex-col">
+		<LoadingIndicator transition:persist="loading" />
 		<Header />
-		<!-- todo: waiting for https://github.com/withastro/astro/pull/9090 -->
-		<!-- <LoadingIndicator /> -->
 		<slot />
 	</body>
 </html>
