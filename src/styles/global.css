@@ -4,24 +4,22 @@ html {
   text-size-adjust: 100%;
 }
 
-
-// scrollbar
 ::-webkit-scrollbar {
   width: 0.4rem;
   height: 0.4rem;
 }
 ::-webkit-scrollbar-thumb {
   border-radius: 1em;
-  background: lighten(#aaa, 20%);
-  &:hover {
-    background: lighten(#aaa, 8%);
-  }
+  background: #d6d6d6;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #bebebe; /* #aaa lighten 8% */
 }
 .dark ::-webkit-scrollbar-thumb {
-  background: lighten(#050505, 8%);
-  &:hover {
-    background: lighten(#050505, 20%);
-  }
+  background: #0e0e0e;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #141414; /* #050505 lighten 20% */
 }
 
 ::-webkit-scrollbar-track-piece,
