@@ -1,4 +1,19 @@
-<footer class="text-center py-3xl text-sm text-soft">
-  &copy;Kricsleo {new Date().getFullYear()}.
-  Built with <a href="https://astro.build/" target="_blank" class="hover:text-highlight">Astro</a>
+---
+import Theme from './Theme.astro'
+---
+
+<footer class="flex items-center justify-between py-3xl text-soft">
+  <div>
+    &copy;Kricsleo {new Date().getFullYear()}.
+    Built with <a href="https://astro.build/" target="_blank" class="hover:text-highlight">Astro</a>
+  </div>
+
+  <div class="flex items-center gap-sm">
+    <a 
+      href="https://github.com/kricsleo" 
+      target="_blank" 
+      class="i-carbon:logo-github nav-link inline-block text-xl"
+      aria-label="github" />
+    <Theme />
+  </div>
 </footer>

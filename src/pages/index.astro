@@ -4,23 +4,24 @@ import Hello from '../components/Hello.vue'
 import Footer from '../components/Footer.astro';
 ---
 
-<BaseLayout title="Home">
-  <main class="viewport pt-6xl pb-7xl grow-1 flex flex-col justify-center space-y-4xl">
-    <Hello client:idle />
+<BaseLayout title="👋🏻 - Kricselo">
+  <div class="max-w-160 mx-auto px-xl min-h-100vh flex flex-col">
+    <main class="grow-1 pt-9xl pb-6xl">
+      <Hello client:idle />
 
-    <div class="space-y-4xl text-2xl leading-relaxed">
-      <ul>
+      <ul class="mt-5xl text-2xl leading-relaxed">
         <li>我是 Kricsleo </li>
         <li>前端开发, 喜欢代码和设计</li>
         <li>享受开源, 崇尚自由与开放</li>
       </ul>
-      <ul class="text-soft">
+
+      <ul class="mt-2xl text-2xl leading-relaxed text-soft">
         <li> I'm Kricsleo </li>
         <li> Front-end developer, crafting code and design </li>
         <li> Enjoying open source and valuing freedom and openness </li>
       </ul>
-    </div>
+    </main>
 
-  </main>
-  <Footer />
+    <Footer />
+  </div>
 </BaseLayout>
