@@ -54,6 +54,10 @@ TS 类型检查也是如此，从 `include` 指定的文件开始进行类型检
 
 （另外一个小点是 `exclude` 不需要配置 `node_modules`，ts 内部始终会 `exclude` 该文件夹）
 
+总的来说，一个文件是否会被 TS 检查，跟这个文件在哪（在 `src/a/` 还是 `../pacakges/b` 还是 `node_modules/`中）没有关系，
+跟是否被 `incldue` 直接包含没有关系，跟是否被 `exclude` 包含也没有关系
+唯一的判定依据是：从 `include` 中出发，按照 `import` 的链式依赖查找，只要最后关联到了这个文件，那么这个文件就会被 TS 类型检查
+
 ### `references`
 
 功能：类似 `include` 指定类型检查的**入口**文件（文件夹）
