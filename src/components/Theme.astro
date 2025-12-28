@@ -32,7 +32,6 @@
       Math.max(x, innerWidth - x),
       Math.max(y, innerHeight - y),
     )
-    // @ts-expect-error: Transition API
     const transition = document.startViewTransition(toggleTheme)
     transition.ready.then(() => {
       const clipPath = [
@@ -45,8 +44,9 @@
           clipPath: isDark ? [...clipPath].reverse() : clipPath,
         },
         {
-          duration: 300,
+          duration: 400,
           easing: 'ease-in',
+          fill: 'forwards',
           pseudoElement: isDark ? '::view-transition-old(root)' : '::view-transition-new(root)',
         },
       )
