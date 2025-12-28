@@ -29,6 +29,6 @@ const date = new Date(post.data.date).toISOString().split('T')[0]
   <main class="prose viewport pt-4xl pb-9xl">
     <h1 class="!mb-1">{post.data.title}</h1>
     <time class="text-soft" datetime={date}> {date} </time>
-    <artile class="mt-5xl block" set:html={rendered.html} />
+    <article class="mt-5xl block" set:html={rendered.html} />
   </main>
 </BaseLayout>
