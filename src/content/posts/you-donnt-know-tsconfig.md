@@ -1,3 +1,8 @@
+---  
+title: "`tsconfig.json` 中一些「反直觉」的表现"
+date: 2025-12-12 16:50:00
+---
+
 本文记录描述 `tsconfig.json` 中一些「反直觉」的表现
 
 ### `skipLibCheck`

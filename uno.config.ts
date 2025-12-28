@@ -1,12 +1,8 @@
-import { 
-  defineConfig, 
-  presetIcons,
-  presetUno,
-} from 'unocss'
+import { defineConfig, presetIcons, presetWind4, } from 'unocss'
 
 export default defineConfig({
   presets:[
-    presetUno(),
+    presetWind4(),
     presetIcons(),
   ],
   shortcuts: [

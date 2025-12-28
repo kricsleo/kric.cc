@@ -1,16 +1,18 @@
 ---
 import { getCollection } from 'astro:content';
-import BaseLayout from '../layouts/Base.astro';
+import BaseLayout from '../../layouts/Base.astro';
 import { createMarkdownRender } from 'unplugin-markdown-2-html/dist/renderer.js';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
   return posts.map(post => ({
-    params: { slug: post.slug.replace(/draft$/, '') }, props: { post },
+    params: { slug: post.id.replace(/\.draft$/, '').replace(/^posts\//, '') }, 
+    props: { post },
   }));
 }
 
 const { post } = Astro.props
+console.log(post)
 const markdownRender = await createMarkdownRender({
   highlight: {
     theme: {
@@ -19,7 +21,7 @@ const markdownRender = await createMarkdownRender({
     }
   }
 })
-const rendered = markdownRender(post.body)
+const rendered = markdownRender(post.body!)
 const date = new Date(post.data.date).toISOString().split('T')[0]
 ---
 <BaseLayout title={post.data.title}>
